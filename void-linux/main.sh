@@ -12,7 +12,7 @@ git config --global user.name "krlspj"
 #echo "launch audio_config.sh"
 #bash ./audio_config.sh
 echo "installing pipewire and alsa"
-sudo xbps-install -y pipewire alsa-pipewire alsamixer
+sudo xbps-install -y pipewire alsa-pipewire AlsaMixer.app
 
 echo "Setup pipewire config..."
 sudo mkdir -p /etc/alsa/conf.d
