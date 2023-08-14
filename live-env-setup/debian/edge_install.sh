@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Running edge installation"
 
 curl -fSsL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-edge.gpg > /dev/null
 
@@ -7,3 +8,5 @@ deb [signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.microsof
 
 sudo apt update
 sudo apt -y install microsoft-edge-stable
+
+echo "completed edge installation"
