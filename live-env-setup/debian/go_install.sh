@@ -24,5 +24,5 @@ if echo "$PATH" | tr ':' '\n' | grep -q "$target_directory"; then
 else
     echo "Directory $target_directory is not in the PATH."
 	./scripts/save_to_fileRC.sh "# golang"
-	./scripts/save_to_fileRC.sh "export PATH=\"\$PATH:/usr/local/go/bin\""
+	./scripts/save_to_fileRC.sh "export PATH=\"/usr/local/go/bin:\$PATH\""
 fi
