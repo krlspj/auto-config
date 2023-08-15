@@ -38,6 +38,6 @@ sudo usermod -aG docker $USER
 
 echo "activate group docker for this termianl"
 newgrp docker
-sg docker -c "docker run hello-world"
+#sg docker -c "docker run hello-world"
 
 echo "docker engine installation completed"
