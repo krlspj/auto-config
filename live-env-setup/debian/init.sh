@@ -11,7 +11,7 @@
 #fi
 #exit 0
 
-echo "start init config..."
+./git_config.sh
 
 if which firefox >/dev/null 2>&1; then
 	echo "Firefox is installed"
@@ -21,7 +21,6 @@ else
 fi
 
 ./install_edge.sh
-
 
 ./neovim_appimage.sh
 
