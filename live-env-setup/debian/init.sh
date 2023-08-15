@@ -15,19 +15,21 @@ echo "start init config..."
 
 if which firefox >/dev/null 2>&1; then
 	echo "Firefox is installed"
-	bash firefox_addons_config.sh
+	./firefox_addons_config.sh
 else
 	echo "firefox is not installed"
 fi
 
-bash ./install_edge.sh
+./install_edge.sh
 
 
-bash snap_setup.sh
-bash neovim_snap_install.sh
+./neovim_appimage.sh
 
-bash neovim_configure.sh
+#bash snap_setup.sh
+#bash neovim_snap_install.sh
 
-bash docker_engine_install.sh
+./neovim_configure.sh
+
+./docker_engine_install.sh
 
 echo "end init config"
