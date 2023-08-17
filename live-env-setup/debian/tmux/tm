@@ -1,42 +1,37 @@
 #!/bin/bash
 
-echo "arg: $1"
-
-if [ "$1" -eq "3" ]; then
-	echo "found"
-fi
 case $# in
     1)
         # If exactly one argument is passed
-		if [ "$1" == "2" ]; then
-			tmux new-session \; \
-				split-window -v -p 25 \; \
-				select-pane -t 0
+	if [ "$1" == "2" ]; then
+		tmux new-session \; \
+		split-window -v -p 25 \; \
+		select-pane -t 0
 
-		elif [ "$1" == "3" ]; then
-			tmux new-session \; \
-				split-window -v -p 25 \; \
-				select-pane -t 0 \; \
-				split-window -h
+	elif [ "$1" == "3" ]; then
+		tmux new-session \; \
+		split-window -v -p 25 \; \
+		select-pane -t 0 \; \
+		split-window -h
 
-		else
-			echo "One argument passed: $1"
-			tmux new-session \; \
-				send-keys "cd $1" C-m \; \
-				split-window -v -p 25 \; \
-				send-keys "cd $1" C-m \; \
-				select-pane -t 0 \; \
-				split-window -h \; \
-				send-keys "cd $1" C-m 
-		fi
+	else
+		echo "One argument passed: $1"
+		tmux new-session \; \
+		send-keys "cd $1" C-m \; \
+		split-window -v -p 25 \; \
+		send-keys "cd $1" C-m \; \
+		select-pane -t 0 \; \
+		split-window -h \; \
+		send-keys "cd $1" C-m 
+	fi
         ;;
     0)
         # If no arguments are passed
         echo "No arguments passed."
-		tmux new-session \; \
-			split-window -v -p 25 \; \
-			select-pane -t 0 \; \
-			split-window -h
+	tmux new-session \; \
+	split-window -v -p 25 \; \
+	select-pane -t 0 \; \
+	split-window -h
 
         # Your code for when no arguments are passed
         ;;
