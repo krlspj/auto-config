@@ -1,6 +1,7 @@
 #!/bin/bash
 
-repo_date="2023/08/05"
+#repo_date="2023/08/05"
+repo_date=$(./process_repo_date.sh "2023/08/05")
 
 echo "Update repositories date to: $repo_date"
 
