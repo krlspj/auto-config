@@ -14,7 +14,7 @@ sudo pacman -Syy
 sudo pacman --noconfirm -S flatpak
 
 printf "Installing stremio...\n\n"
-flatpak install -y com.stremio.Stremio.flatpakref
+flatpak install -y com.stremio.Stremio
 printf "==>Launch stremio from flatpak\n\n"
 sleep 1;
 flatpak run com.stremio.Stremio
