@@ -22,6 +22,7 @@ sudo pacman --noconfirm -Scc
 echo "Git config"
 git config --global user.name krlspj
 git config --global user.email krls.pjds@gmail.com
+git config --global core.editor "nvim"
 
 git clone https://github.com/krlspj/nvim-config.git $HOME/.config/nvim
 
@@ -44,6 +45,11 @@ fi
 redshift -m randr -O 3000
 #redshift -m randr -x  # to reset the screen color
 
+echo "Install java latest"
+sudo pacman -S --noconfirm jdk-openjdk
+
+echo "Install Anydesk"
+sudo yay -Syy --noconfirm anydesk-bin
 
 echo "install docker"
 
