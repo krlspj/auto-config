@@ -27,6 +27,19 @@ git clone https://github.com/krlspj/nvim-config.git $HOME/.config/nvim
 
 sudo pacman --noconfirm -S redshift
 
+# Check if .bashrc exists
+if [ -f ~/.bashrc ]; then
+  # Append the alias to .bashrc
+  echo "" >> ~/.bashrc
+  echo "# aliases" >> ~/.bashrc
+  echo "alias lday='redshift -m randr -x'" >> ~/.bashrc
+  echo "alias lnight='redshift -m randr -O 3000'" >> ~/.bashrc
+  echo "Alias 'lday and lnight' has been added to ~/.bashrc."
+  # Source .bashrc to apply changes immediately
+  #source ~/.bashrc
+else
+  echo "Error: ~/.bashrc file not found. Please create it or check your installation."
+fi
 # set screen color temperature
 redshift -m randr -O 3000
 #redshift -m randr -x  # to reset the screen color
