@@ -9,7 +9,11 @@ echo "Configure and install all packages needed for development"
 
 echo "Install codding packages"
 
-sudo pacman --noconfirm -Syy neovim tmux valgrind npm lldb podman #podman-compose
+sudo pacman --noconfirm -Syy \
+	neovim xsel npm rustup tmux \
+	valgrind lldb podman #podman-compose
+
+rustup install stable
 
 sudo pacman --noconfirm -U https://archive.archlinux.org/packages/g/go/go-2%3A1.21.0-1-x86_64.pkg.tar.zst
 
