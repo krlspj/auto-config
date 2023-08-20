@@ -42,10 +42,10 @@ pacman -U https://archive.archlinux.org/packages/path/packagename.pkg.tar.zst
 
 
 #### Usefull links from arch wiki:
-https://wiki.archlinux.org/title/Arch_Linux_Archive#/packages
-https://wiki.archlinux.org/title/Downgrading_packages#Automation
-https://wiki.archlinux.org/title/Arch_Linux_Archive#How_to_downgrade_one_package
-https://wiki.archlinux.org/title/Official_repositories
+https://wiki.archlinux.org/title/Arch_Linux_Archive#/packages  
+https://wiki.archlinux.org/title/Downgrading_packages#Automation  
+https://wiki.archlinux.org/title/Arch_Linux_Archive#How_to_downgrade_one_package  
+https://wiki.archlinux.org/title/Official_repositories  
 
 
 
