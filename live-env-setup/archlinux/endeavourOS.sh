@@ -19,6 +19,9 @@ sudo pacman --noconfirm -U https://archive.archlinux.org/packages/g/go/go-2%3A1.
 
 sudo pacman --noconfirm -Scc
 
+echo "Git config"
+git config --global user.name krlspj
+git config --global user.email krls.pjds@gmail.com
 
 git clone https://github.com/krlspj/nvim-config.git $HOME/.config/nvim
 
