@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-python3 -m pip install --user -r ./scripts/requirements.txt
+pip install --user -r ./scripts/requirements.txt --break-system-packages
 
 #wget https://addons.mozilla.org/en-US/firefox/addon/darkreader 
 #"https://addons.mozilla.org/en-US/firefox/addon/darkreader/"

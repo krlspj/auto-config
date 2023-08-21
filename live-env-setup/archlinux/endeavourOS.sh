@@ -11,6 +11,7 @@ echo "Install codding packages"
 
 sudo pacman --noconfirm -Syy \
 	neovim xsel npm rustup tmux \
+	python-pip \
 	valgrind lldb podman #podman-compose
 
 rustup install stable
