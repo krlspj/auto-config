@@ -31,4 +31,6 @@ fi
 
 ./docker_engine_install.sh
 
+./redshift_install.sh
+
 echo "end init config"
