@@ -5,6 +5,6 @@ services:
     container_name: 42bcn-env
     volumes:
       - ./install-scripts:/install-scripts
-      - ./data:/shared-data
+      - ./shared-data:/shared-data
     command: /bin/bash -c "cd /install-scripts && ./setup.sh && tail -f /dev/null"
 
