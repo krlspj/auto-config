@@ -8,3 +8,5 @@ chmod +x ~/bin/nvim.appimage
 
 ./scripts/save_to_fileRC.sh "# Neovim alias"
 ./scripts/save_to_fileRC.sh "alias nvim=\"$HOME/bin/nvim.appimage\""
+echo "set neovim as git editor"
+./scripts/save_to_fileRC.sh "export GIT_EDITOR=nvim"
