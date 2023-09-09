@@ -20,7 +20,7 @@ else
 	echo "firefox is not installed"
 fi
 
-./install_edge.sh
+#./install_edge.sh
 
 ./neovim_appimage.sh
 
