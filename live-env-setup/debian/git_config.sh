@@ -16,5 +16,8 @@ else
 	git config --global user.name "krlspj"
 fi
 
+#git config --global credential.helper 'cache --timeout=3600'
+git config --global credential.helper 'cache --timeout=5184000'
+
 echo "git config end"
 
