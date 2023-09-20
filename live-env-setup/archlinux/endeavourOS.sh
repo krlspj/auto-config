@@ -16,7 +16,7 @@ sudo pacman --noconfirm -Syy \
 
 rustup install stable
 
-sudo pacman --noconfirm -U https://archive.archlinux.org/packages/g/go/go-2%3A1.21.0-1-x86_64.pkg.tar.zst
+sudo pacman --noconfirm -U https://archive.archlinux.org/packages/g/go/go-2%3A1.21.1-1-x86_64.pkg.tar.zst
 
 sudo pacman --noconfirm -Scc
 
@@ -49,11 +49,10 @@ redshift -m randr -O 3000
 echo "Install java latest"
 sudo pacman -S --noconfirm jdk-openjdk
 
-echo "Install Anydesk"
-sudo yay -Syy --noconfirm anydesk-bin
+#echo "Install Anydesk"
+#sudo yay -Syy --noconfirm anydesk-bin
 
 echo "install docker"
-
 sudo pacman --noconfirm -S docker #$docker-compose
 systemctl start docker.service
 
