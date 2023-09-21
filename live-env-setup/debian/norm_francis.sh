@@ -5,7 +5,7 @@ sudo apt-get update #$&& sudo apt-get -y upgrade
 
 echo ">> install packages"
 sudo apt-get -y install git xsel python3-pip python3-venv 
-sudo apt-get -y install gcc clang libpq-dev libbsd-dev libncurses-dev valgrind
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install gcc clang libpq-dev libbsd-dev libncurses-dev valgrind
 
 cd $HOME
 python3 -m venv ./venv
