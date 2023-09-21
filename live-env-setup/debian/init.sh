@@ -29,7 +29,7 @@ fi
 
 ./neovim_configure.sh
 
-./docker_engine_install.sh
+#./docker_engine_install.sh
 
 ./redshift_install.sh
 
