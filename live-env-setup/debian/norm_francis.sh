@@ -17,6 +17,10 @@ source $HOME/venv/bin/activate
 pip3 install --upgrade pip setuptools
 pip3 install norminette
 
+pip3 install c-formatter-42
+echo "use c-formatter-42:"
+echo "c_formatter_42 <filename.c>"
+
 echo ">> end update and packages installation"
 
 echo ">> installing francinette"
