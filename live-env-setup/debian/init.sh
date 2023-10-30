@@ -28,7 +28,7 @@ fi
 #bash neovim_snap_install.sh
 
 ./neovim_configure.sh
-
+./norm_francis.sh
 #./docker_engine_install.sh
 
 ./redshift_install.sh
