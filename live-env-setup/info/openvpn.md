@@ -15,5 +15,5 @@ remote-cert-tls server
 data-ciphers AES-256-GCM:AES-128-GCM:AES-128-CBC
 verb 3
 ```
-**remote-cert-tls server**
+**remote-cert-tls server**\n
 **data-ciphers AES-256-GCM:AES-128-GCM:AES-128-CBC**
