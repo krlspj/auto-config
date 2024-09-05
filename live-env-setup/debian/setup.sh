@@ -2,11 +2,13 @@
 
 # Use snapshot repository
 SOURCES_FILE="/etc/apt/sources.list"
+TIMESTAMP="20240901T000000Z"
+EXECUTION_TIMESTAMP=$(date +"%Y%m%dT%H%M%SZ")
 # Backup the original sources.list
-sudo cp "$SOURCES_FILE" "${SOURCES_FILE}.bak"
+sudo cp "$SOURCES_FILE" "${SOURCES_FILE}_$EXECUTION_TIMESTAMP.bak"
 # Write the updated content to the file using 'tee' for proper permission handling
 sudo tee "$SOURCES_FILE" > /dev/null <<EOF
-deb http://snapshot.debian.org/archive/debian/20240901T000000Z/ bookworm main non-free-firmware
+deb http://snapshot.debian.org/archive/debian/$TIMESTAMP/ bookworm main non-free-firmware
 deb [trusted=yes] file:/run/live/medium bookworm main non-free-firmware
 EOF
 # Notify the user of the changes
