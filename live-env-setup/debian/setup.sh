@@ -1,5 +1,17 @@
 #!/bin/bash
 
+# Use snapshot repository
+SOURCES_FILE="/etc/apt/sources.list"
+# Backup the original sources.list
+sudo cp "$SOURCES_FILE" "${SOURCES_FILE}.bak"
+# Write the updated content to the file using 'tee' for proper permission handling
+sudo tee "$SOURCES_FILE" > /dev/null <<EOF
+deb http://snapshot.debian.org/archive/debian/20240901T000000Z/ bookworm main non-free-firmware
+deb [trusted=yes] file:/run/live/medium bookworm main non-free-firmware
+EOF
+# Notify the user of the changes
+echo "Updated $SOURCES_FILE. A backup was saved as ${SOURCES_FILE}.bak."
+
 sudo apt-get update
 sudo apt-get install -y neovim
 
