@@ -14,7 +14,8 @@ if [ "$#" -eq 1 ]; then
     if [[ "$1" =~ ^[0-9]{4}/[0-9]{2}/[0-9]{2}$ ]]; then
         repo_date="$1"
     else
-        #echo "Invalid date format. Please use the format 'yyyy/mm/dd'. Using default value: $default_repo_date"
+        echo "Invalid date format. Please use the format 'yyyy/mm/dd'. Using default value: $default_repo_date"
+	exit;
         repo_date="$default_repo_date"
     fi
 else
