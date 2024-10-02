@@ -25,7 +25,7 @@ fi
 #echo "repo_date is set to: $repo_date"
 echo $repo_date
 
-./set_mirrolist_to_fix_date.sh
+./set_mirrolist_to_fix_date.sh $repo_date
 
 echo "Install codding packages"
 
