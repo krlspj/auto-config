@@ -34,10 +34,8 @@ sudo pacman --noconfirm -Syy \
 	python-pip \
 	valgrind lldb podman #podman-compose
 
-rustup install stable
-
-sudo pacman --noconfirm -U https://archive.archlinux.org/packages/g/go/go-2%3A1.21.1-1-x86_64.pkg.tar.zst
-
+#rustup install stable
+#sudo pacman --noconfirm -U https://archive.archlinux.org/packages/g/go/go-2%3A1.21.1-1-x86_64.pkg.tar.zst
 sudo pacman --noconfirm -Scc
 
 echo "Git config"
