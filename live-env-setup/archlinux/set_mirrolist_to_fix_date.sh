@@ -1,13 +1,13 @@
 #!/bin/bash
 
 #repo_date="2023/08/05"
-repo_date=$(./process_repo_date.sh "2023/08/05")
+#repo_date=$(./process_repo_date.sh "2023/08/05")
 
-echo "Update repositories date to: $repo_date"
+echo "Update repositories date to: $1"
 
 #file="mirrorlist"
 file="/etc/pacman.d/mirrorlist"
-new_line="Server=https://archive.archlinux.org/repos/$repo_date/\$repo/os/\$arch"
+new_line="Server=https://archive.archlinux.org/repos/$1/\$repo/os/\$arch"
 
 # Check if the file exists
 if [ -f "$file" ]; then
