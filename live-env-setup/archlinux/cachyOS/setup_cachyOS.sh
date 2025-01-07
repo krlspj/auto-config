@@ -85,8 +85,14 @@ git config --global user.email krls.pjds@gmail.com
 git config --global user.name krlspj
 
 git config --global core.editor "vim"
+git config --global credential.helper 'cache --timeout=15768000' # 6 month
 
 sudo pacman --noconfirm -S neovim mpv
+
+echo "neovim setup"
+cd ~/.config
+git clone https://github.com/krlspj/nvim-config.git nvim
+
 
 
 
