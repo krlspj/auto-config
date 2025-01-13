@@ -59,7 +59,8 @@ echo "Backup created: $BACKUP_FILE"
 sudo sed -i 's/^\(Server\s*=\)/#\1/' "$MIRRORLIST_FILE"
 
 # Add the new server line at the end of the file
-sudo echo -e "\n$NEW_SERVER" >> "$MIRRORLIST_FILE"
+#sudo echo -e "\n$NEW_SERVER" >> "$MIRRORLIST_FILE"
+echo -e "$NEW_SERVER" | sudo tee -a /etc/pacman.d/mirrorlist
 
 echo "Mirrorlist updated successfully."
 echo "New server added: $NEW_SERVER"
@@ -87,11 +88,11 @@ git config --global user.name krlspj
 git config --global core.editor "vim"
 git config --global credential.helper 'cache --timeout=15768000' # 6 month
 
-sudo pacman --noconfirm -S neovim mpv
+#sudo pacman --noconfirm -S neovim mpv
 
-echo "neovim setup"
-cd ~/.config
-git clone https://github.com/krlspj/nvim-config.git nvim
+#echo "neovim setup"
+#cd ~/.config
+#git clone https://github.com/krlspj/nvim-config.git nvim
 
 
 
