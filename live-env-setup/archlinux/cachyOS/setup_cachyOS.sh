@@ -88,6 +88,12 @@ git config --global user.name krlspj
 git config --global core.editor "vim"
 git config --global credential.helper 'cache --timeout=15768000' # 6 month
 
+# stremio
+sudo pacman --noconfirm -S flatpak
+flatpak install -y com.stremio.Stremio
+sleep 1;
+flatpak run com.stremio.Stremio
+
 #sudo pacman --noconfirm -S neovim mpv
 
 #echo "neovim setup"
