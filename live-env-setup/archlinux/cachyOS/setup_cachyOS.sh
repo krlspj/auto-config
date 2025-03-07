@@ -88,6 +88,11 @@ git config --global user.name krlspj
 git config --global core.editor "vim"
 git config --global credential.helper 'cache --timeout=15768000' # 6 month
 
+sudo pacman -S --noconfirm mpv kamoso
+
+# remove cached packages:
+# sudo rm -rf /var/lib/pacman/sync/*
+
 # stremio
 sudo pacman --noconfirm -S flatpak
 flatpak install -y com.stremio.Stremio
