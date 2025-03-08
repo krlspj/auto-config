@@ -91,7 +91,12 @@ git config --global credential.helper 'cache --timeout=15768000' # 6 month
 sudo pacman -S --noconfirm mpv kamoso
 
 # remove cached packages:
-# sudo rm -rf /var/lib/pacman/sync/*
+#sudo rm -rf /var/lib/pacman/sync/*
+
+# Manually Update Keyring
+#sudo rm -rf /etc/pacman.d/gnupg
+#sudo pacman-key --init
+#sudo pacman-key --populate archlinux
 
 # stremio
 sudo pacman --noconfirm -S flatpak
@@ -100,6 +105,9 @@ sleep 1;
 flatpak run com.stremio.Stremio
 
 #sudo pacman --noconfirm -S neovim mpv
+
+# Install archlinux-keyring
+#sudo pacman -Syyu archlinux-keyring
 
 #echo "neovim setup"
 #cd ~/.config
