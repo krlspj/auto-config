@@ -39,7 +39,9 @@ fi
 MIRRORLIST_FILE="/etc/pacman.d/mirrorlist"
 
 # Define the new server to add
-NEW_SERVER="Server=https://archive.archlinux.org/repos/2024/12/21/\$repo/os/\$arch"
+#NEW_SERVER="Server=https://archive.archlinux.org/repos/2024/12/21/\$repo/os/\$arch"
+NEW_SERVER="Server=https://archive.archlinux.org/repos/2025/03/30/\$repo/os/\$arch"
+
 
 # Get the current timestamp
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
